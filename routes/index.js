@@ -38,7 +38,7 @@ const tweetNasaDailyImage = async () => {
 	await client.v1.tweet(nasaApi.data.title, { media_ids: mediaIds });
 };
 
-// setInterval(tweetNasaDailyImage, 86400000);
-tweetNasaDailyImage();
+setInterval(tweetNasaDailyImage, 86400000);
+// tweetNasaDailyImage();
 
 module.exports = router;
